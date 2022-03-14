@@ -11,12 +11,12 @@
     <img class="logo" src="assests/logo.png" alt="logo">
     <main class="container__input">
         <span>Tamanho <span id="valor"></span>caracteres</span>
-        <input type="range" class="slider" id="slider" min="5" max=" 25" value="15">
+        <input type="range" class="slider" id="slider" min="5" max="25" value="15">
 
-        <button id="button" class="button__cta">Gerador de Senha</button>
+        <button id="button" class="button__cta" onclick="generatePassword()">Gerador de Senha</button>
 
     </main>
-    <div id="container__password" class="container__password hide">
+    <div id="container__password" onclick="copyPassword()" class="container__password hide">
         <span class="title">Sua senha gerada foi</span>
         <span id="password" class="password">123123123</span>
         <span class="tooltip">clique na senha para copiar 👍</span>
